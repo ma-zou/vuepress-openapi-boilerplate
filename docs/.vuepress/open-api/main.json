@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "sample",
+        "description": "sample but longer",
+        "version": "0.1.9"
+    },
+    "servers": [
+        {
+            "url": "https://api.example.com/v1",
+            "description": "asdmaskdmalsdm"
+        },
+        {
+            "url": "https://staging-api.example.com/v1",
+            "description": "asdmaskdmalsdm"
+        }
+    ],
+    "paths": {
+        "/users": {
+            "get": {
+                "summary": "get something",
+                "description": "you got the following",
+                "response": {
+                    "200": {
+                        "description": "A JSON array of user names",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
